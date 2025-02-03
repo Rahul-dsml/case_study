@@ -12,7 +12,8 @@ env/
 secrets.toml
 
 # Streamlit cache and logs
-.streamlit/
+.streamlit/secrets.toml
+!/.streamlit/Dockerfile
 logs/
 cache/
 
