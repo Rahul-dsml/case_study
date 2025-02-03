@@ -10,3 +10,4 @@ pillow
 torch
 transformers
 opencv-python
+groq

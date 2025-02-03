@@ -46,9 +46,9 @@ class GroqImageQuery:
         )
         return chat_completion.choices[0].message.content.strip()
 
-def extract_text_from_image(image_path):
-    elements = partition_image(filename=image_path)
-    return " ".join([element.text for element in elements if element.text])
+# def extract_text_from_image(image_path):
+#     elements = partition_image(filename=image_path)
+#     return " ".join([element.text for element in elements if element.text])
 
 def describe_image(image_path, groq_query):
     base64_image = groq_query.encode_image(image_path)
