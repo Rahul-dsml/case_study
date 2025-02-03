@@ -1,7 +1,7 @@
 
 import streamlit as st
 from pdf2image import convert_from_path
-from unstructured.partition.image import partition_image
+# from unstructured.partition.image import partition_image
 from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
