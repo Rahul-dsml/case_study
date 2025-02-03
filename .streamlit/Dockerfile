@@ -2,7 +2,7 @@ FROM python:3.10-slim
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    libgl1-mesa-glx \
+    poppler-utils \
     && rm -rf /var/lib/apt/lists/*
 
 # Install your Python dependencies
