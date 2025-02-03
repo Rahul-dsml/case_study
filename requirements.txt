@@ -1,0 +1,12 @@
+streamlit
+langchain
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+unstructured[pdf]
+pdf2image
+pytesseract
+pillow
+torch
+transformers
