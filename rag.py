@@ -10,10 +10,11 @@ import base64
 from groq import Groq
 
 # Constants
-API_KEY = "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"  # Replace with actual API key
-MODEL_NAME = "llama-3.2-90b-vision-preview"
-EMBEDDING_MODEL ='BAAI/bge-large-en' #'all-MiniLM-L6-v2'
-MAX_TOKENS = 1024
+API_KEY = st.secrets["API_KEY"]  
+MODEL_NAME = st.secrets["MODEL_NAME"]  
+EMBEDDING_MODEL = st.secrets["EMBEDDING_MODEL"]   
+MAX_TOKENS = st.secrets["MAX_TOKENS"] 
+
 
 class GroqImageQuery:
     def __init__(self, api_key):
